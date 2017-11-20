@@ -1,17 +1,35 @@
 import requests
 from bs4 import BeautifulSoup
 
+#def scrape():
+
+#url = "http://na.op.gg/champion/statistics"
+#r = requests.get(url)
+#r.content
+
+#soup = BeautifulSoup(r.content)
+
+#winrate = soup.find_all("div", {"class":"l-champion-index-content--side"})
+
+#for item in winrate:
+#  print item.contents[0].text
+
+#  scrape():
+###########################################
 def scrape():
 
-url = "http://na.op.gg/champion/statistics"
-r = requests.get(url)
-r.content
+	url = "http://na.op.gg/champion/statistics";
+	r = requests.get(url);
+	r.content;
+	soup = BeautifulSoup(r.content);
+	
+	soup.prettify()
+	winrate = soup.find_all("div", {"class":"champion-index-trend-champion__list"});
+	
+	
+	for item in winrate:
+		print item.contents[0].text;
+		
+		
 
-soup = BeautifulSoup(r.content)
-
-winrate = soup.find_all("div", {"class":"l-champion-index-content--side"})
-
-for item in winrate:
-  print item.contents[0].text
-
-  scrape():
+scrape()
