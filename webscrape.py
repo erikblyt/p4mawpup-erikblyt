@@ -1,6 +1,7 @@
 import traceback
 import requests
 from bs4 import BeautifulSoup
+import os
 
 def scrape():
 
@@ -41,8 +42,8 @@ def scrape():
 
 			print("Rank: " + rank)
 			print("Champion: " + champion)
-			print("Win Rate: " + winrate)
-			print("Pick Rate: " + pickrate)
+			print("Win Rate: " + pickrate)
+			print("Pick Rate: " + winrate)
 			print("Position: " + position)
 
 		except Exception as e:
@@ -51,5 +52,7 @@ def scrape():
 			print(e)
 			traceback.print_exc()
 			pass
-
-scrape()
+while True:
+	os.system('cls')
+	scrape()
+	sleep(5)
