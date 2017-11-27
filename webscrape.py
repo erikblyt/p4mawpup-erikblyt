@@ -54,6 +54,8 @@ def scrape():
 			traceback.print_exc()
 			pass
 while True:
+	if not
 	os.system('cls')
+	os.system('clear')
 	scrape()
 	time.sleep(10)
