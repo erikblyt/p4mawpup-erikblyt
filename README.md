@@ -3,9 +3,11 @@
 
 # you will need to pip install beautifulsoup4 and requests modules
 
-#You will need to use c:\Python27\Scripts\virtualenv.exe -p C:\Python27\python.exe .lpvenv to create a virtual environment on your machine
+#You will NOT be able to run this in a virtual environment
 
-#From there you will need to activate the environment using .lpvenv\Scripts\activate
+#instead you will need to have python added to your environmental path so you may run python webscrape.py
+
+#to do so go to control panel, user, user accounts, change my environmental variables, and add cd C:\Python27 to your environmental path
 
 #Then you will use pip install to install BOTH requests and beautifulsoup4 modules
 
