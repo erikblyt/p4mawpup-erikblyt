@@ -2,6 +2,7 @@ import traceback
 import requests
 from bs4 import BeautifulSoup
 import os
+import time
 
 def scrape():
 
@@ -53,6 +54,7 @@ def scrape():
 			traceback.print_exc()
 			pass
 while True:
+	os.system('clear')
 	os.system('cls')
 	scrape()
-	sleep(5)
+	time.sleep(10)
