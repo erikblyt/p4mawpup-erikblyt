@@ -1,17 +1,23 @@
 # Python-Web-Scraper
 
-#Do Not Run This In VIRUTAL ENVIRONMENT
 
-#Simply use this in Python27
-# you will need to pip install beautifulsoup4, requests, os
+# you will need to pip install beautifulsoup4 and requests modules
+
+#You will need to use c:\Python27\Scripts\virtualenv.exe -p C:\Python27\python.exe .lpvenv to create a virtual environment on your machine
+
+#From there you will need to activate the environment using .lpvenv\Scripts\activate
+
+#Then you will use pip install to install BOTH requests and beautifulsoup4 modules
+
+#It should look something like pip install beautifulsoup4 or pip install requests
+
+#Beyond that execute the program in python, by entering python webscrape.py into the command line
 
 
 
 
 
+#Code derived from Nathan's Tutorial on youtube in using erquests and beautifulsoup4
 
-#Time snippets taken from Mr.Walker's Notes
-#Props to Alex Coffin for suggesting use of while loops and use of os for finishing the prettify.soup process
-#Thanks to Nathan from youtube for BeautifulSoup4 tutorial
-#Thanks to Python.org for os command snippets
-#Thanks to Nathan from youtube for teaching use of requests module
+#Snippets derived from Alex Coffin and Walker's python snippets
+
