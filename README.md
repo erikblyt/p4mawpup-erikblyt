@@ -1,6 +1,6 @@
 # Python-Web-Scraper
 
-
+# You will need to install Python 2.7.1
 # you will need to pip install beautifulsoup4 and requests modules
 
 #You will NOT be able to run this in a virtual environment
