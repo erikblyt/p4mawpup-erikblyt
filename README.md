@@ -19,7 +19,7 @@
 
 
 
-#Code derived from Nathan's Tutorial on youtube in using erquests and beautifulsoup4
+#Code derived from Nathan's Tutorial on youtube in using requests and beautifulsoup4
 
 #Snippets derived from Alex Coffin and Walker's python snippets
 
