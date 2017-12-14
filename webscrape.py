@@ -58,21 +58,7 @@ def scrape():
 			print(item)
 			print(e)
 			traceback.print_exc()
-			pass
-
-wr_change = [s for s in soup.<div class="champion-trend-champion__value champion-trend-champion__value--winratio".stripped_strings if pickrate != in s.]		
-		
-if True:
-	body = 'Winrate change:\n\n' + '\n'.join(wr_change)
-	client = Client(account_sid, auth_token)
-    	client.messages.create(
-        	body=body,
-        	to=my_phone_number,
-        	from_=twilio_phone_number
-    )
-		
-		
-		
+			pass		
 		
 while True:
 	os.system('cls')
