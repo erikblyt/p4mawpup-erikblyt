@@ -7,15 +7,15 @@ import time
 def scrape():
 	
 	#twilio info
-	account_sid = 'AC13813ad84a5313d922089ce95941b1b9';
-	auth_token = 'd4958832fa5859c47d0cda932f9ce7a0';
-	twilio_phone_number = '+15037555397';
-	my_phone_number = '+15039154438';
+	 global account_sid = 'AC13813ad84a5313d922089ce95941b1b9';
+	 global auth_token = 'd4958832fa5859c47d0cda932f9ce7a0';
+	 global twilio_phone_number = '+15037555397';
+	 global my_phone_number = '+15039154438';
 	#beautifulsoup  requests and scraping setup
 	url = "http://na.op.gg/champion/statistics";
 	r = requests.get(url);
 	r.content;
-	soup = BeautifulSoup(r.content);
+	soup = BeautifulSoup(r.content, 'html.parser');
 
 	soup.prettify()
 	item_info_list = soup.find_all("div", {"class":"champion-index-trend-champion__item"});
@@ -49,8 +49,8 @@ def scrape():
 
 			print("Rank: " + rank)
 			print("Champion: " + champion)
-			print("Win Rate: " + pickrate)
-			print("Pick Rate: " + winrate)
+			print("Win Rate: " + winrate)
+			print("Pick Rate: " + pickrate)
 			print("Position: " + position)
 
 		except Exception as e:
@@ -59,6 +59,13 @@ def scrape():
 			print(e)
 			traceback.print_exc()
 			pass		
+		
+#setting up twilio
+
+
+
+
+
 		
 while True:
 	os.system('cls')
