@@ -5,7 +5,13 @@ import os
 import time
 
 def scrape():
-
+	
+	#twilio info
+	account_sid = 'AC13813ad84a5313d922089ce95941b1b9';
+	auth_token = 'd4958832fa5859c47d0cda932f9ce7a0';
+	twilio_phone_number = '+15037555397';
+	my_phone_number = '+15039154438';
+	#beautifulsoup  requests and scraping setup
 	url = "http://na.op.gg/champion/statistics";
 	r = requests.get(url);
 	r.content;
@@ -53,8 +59,22 @@ def scrape():
 			print(e)
 			traceback.print_exc()
 			pass
+
+wr_change = [s for s in soup.<div class="champion-trend-champion__value champion-trend-champion__value--winratio".stripped_strings if pickrate != in s.]		
+		
+if True:
+	body = 'Winrate change:\n\n' + '\n'.join(wr_change)
+	client = Client(account_sid, auth_token)
+    	client.messages.create(
+        	body=body,
+        	to=my_phone_number,
+        	from_=twilio_phone_number
+    )
+		
+		
+		
+		
 while True:
 	os.system('cls')
-	os.system('clear')
 	scrape()
-	time.sleep(10)
+	time.sleep(15)
